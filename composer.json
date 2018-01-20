@@ -1,0 +1,52 @@
+{
+    "name": "recca0120/mitake",
+    "description": "三竹簡訊 mitake api client",
+    "keywords": ["mitake", "sms", "taiwan", "laravel", "notification"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "recca0120",
+            "email": "recca0120@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "guzzlehttp/psr7": "^1.4",
+        "nesbot/carbon": "^1.22",
+        "php-http/client-implementation": "^1.0",
+        "php-http/discovery": "^1.2",
+        "php-http/httplug": "^1.1",
+        "php-http/message": "^1.5"
+    },
+    "require-dev": {
+        "illuminate/support": "^5.1",
+        "mockery/mockery": "~0.9.4",
+        "php-http/guzzle6-adapter": "^1.1",
+        "phpunit/phpunit": "~4.8|~5.4|~6.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Recca0120\\Mitake\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Recca0120\\Mitake\\Tests\\": "tests/"
+        }
+    },
+    "suggest": {
+       "illuminate/notifications": "If you need Laravel Notification"
+   },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Recca0120\\Mitake\\MitakeServiceProvider"
+            ]
+        }
+    }
+}
