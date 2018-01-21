@@ -48,13 +48,18 @@ class ClientTest extends TestCase
         );
 
         $response->shouldReceive('getBody->getContents')->once()->andReturn(
-            '0892443357	4	20160407153759'
+            '1010079522	1	20170101010010
+1010079523	4	20170101010011'
         );
 
         $this->assertSame([[
-            'to' => '0892443357',
+            'to' => '1010079522',
+            'credit' => '1',
+            'time' => '20170101010010',
+        ], [
+            'to' => '1010079523',
             'credit' => '4',
-            'time' => '20160407153759',
+            'time' => '20170101010011',
         ]], $client->query($params));
     }
 

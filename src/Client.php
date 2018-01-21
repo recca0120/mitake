@@ -220,7 +220,9 @@ class Client
                 }, explode("\n", $response));
                 break;
             default:
-                return parse_ini_string($response);
+                $result = parse_ini_string($response, true);
+
+                return count($result) > 1 ? $result : reset($result);
                 break;
         }
     }
