@@ -142,7 +142,7 @@ use Recca0120\Mitake\Client;
 $userId = 'xxx';
 $password = 'xxx';
 
-$client = new Client(userId, $password);
+$client = new Client($userId, $password);
 
 var_dump($client->credit()); // 取得額度
 var_dump($client->send([
