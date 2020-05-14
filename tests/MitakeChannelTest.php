@@ -2,12 +2,12 @@
 
 namespace Recca0120\Mitake\Tests;
 
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Notifications\Notification;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 use Recca0120\Mitake\MitakeChannel;
 use Recca0120\Mitake\MitakeMessage;
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Notifications\Notification;
 
 class MitakeChannelTest extends TestCase
 {

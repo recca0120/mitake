@@ -2,10 +2,10 @@
 
 namespace Recca0120\Mitake\Tests;
 
-use Mockery as m;
 use Carbon\Carbon;
-use Recca0120\Mitake\Client;
+use Mockery as m;
 use PHPUnit\Framework\TestCase;
+use Recca0120\Mitake\Client;
 
 class ClientTest extends TestCase
 {
